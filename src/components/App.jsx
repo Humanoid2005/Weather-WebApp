@@ -20,7 +20,7 @@ function App() {
     async function SubmittedPlace(place){
         setInputPlace(place);
         console.log(place);
-        const response = await axios.get(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${API_KEY}&q=${place}`);
+        const response = await axios.get(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${API_KEY}&q=${place}`);
         if(response.data==null || response.data.length==0){
             toast.error(`City named ${InputPlace} does not exist!!`, {
                 position: "top-center",
@@ -36,7 +36,7 @@ function App() {
         }
         else{
             const LocationKey = response.data[0].Key;
-            const response2 = await axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${LocationKey}?apikey=${API_KEY}&details=true`);
+            const response2 = await axios.get(`https://dataservice.accuweather.com/currentconditions/v1/${LocationKey}?apikey=${API_KEY}&details=true`);
             const result = response2.data;
             const time = result[0].LocalObservationDateTime.slice(11,13);
             setTime(result[0].LocalObservationDateTime.slice(11,16))
