@@ -1,0 +1,94 @@
+body{
+    background-image: url("./images/basicbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:5px;
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar{
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.text{
+    color: #2E2E2E;
+}
+
+.placeformdiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    margin: 50px auto;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.placeform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    text-align: center;
+    margin:10px;
+    border-radius: 5px;
+    height: 30px;
+    width:200px;
+}
+
+.text,.inputtext{
+    font-family: "Ubuntu","sans";
+}
+
+.inputlabeltext{
+    color: #6E6E6E;
+    font-size: 20px;
+}
+
+.formheading{
+    color: #4E4E4E;
+    margin-bottom: 5px;
+}
+
+.formsubmitbutton{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(227, 214, 30);
+    font-weight: bold;
+    height: 30px;
+    width: 70px;
+}
+
+.weathercontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.weathercontainer > *{
+    margin:10px;
+}
