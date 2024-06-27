@@ -1,7 +1,7 @@
 
 # Weather App
 
-This is a weather webapp which displayes the weather in a particular location entered by the user.
+This is a weather webapp which displays the weather in a particular location entered by the user.
 
 
 
